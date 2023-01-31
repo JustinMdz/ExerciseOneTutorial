@@ -1,5 +1,4 @@
 #include "Insurer.h"
-#include "Insurance.h"
 
 Insurer::Insurer() {
 	costumers = 0;

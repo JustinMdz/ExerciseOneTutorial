@@ -7,7 +7,7 @@
 #define SEG 1000
 using namespace std;
 
-class Insurer : public Insurance
+class Insurer 
 {
 private:
 	Customer* costumersList[CLI];

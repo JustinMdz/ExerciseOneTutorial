@@ -2,7 +2,7 @@
 #include <iostream>
 using namespace std;
 
-class VehicleInsurance
+class VehicleInsurance : public Insurance
 {
 	private:
 		string licensePlate;
