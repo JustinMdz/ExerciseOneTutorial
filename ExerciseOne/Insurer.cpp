@@ -28,7 +28,7 @@ int Insurer::searchCostumer(string costumer_Id) {
 bool Insurer::addVehicleInsurance(string costumer_Id, string plate, double insurance_Amount) {
 	if (insurances < SEG) {
 		if (searchCostumer(costumer_Id) != -1){
-			vehiclesInsurance[insurances].setIdCostumer(costumer_Id);
+			vehiclesInsurance[insurances].setIdCustomer(costumer_Id);
 			vehiclesInsurance[insurances].setLicensePlate(plate);
 			vehiclesInsurance[insurances].setInsuranceAmount(insurance_Amount);
 			insurances++;

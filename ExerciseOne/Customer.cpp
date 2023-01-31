@@ -13,7 +13,7 @@ string Customer::getName() {
 	return name;
 }
 
-void Customer::setIdCustumer(string idCustomer) {
+void Customer::setIdCustomer(string idCustomer) {
 	this->idCustomer = idCustomer;
 }
 
