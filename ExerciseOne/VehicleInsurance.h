@@ -1,6 +1,7 @@
 #pragma once
 #include <iostream>
 #include "Insurance.h"
+#include "Customer.h"
 
 using namespace std;
 

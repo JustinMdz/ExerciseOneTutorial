@@ -16,7 +16,7 @@ void Insurer::addCostumer(Customer* costumer) {
 	}
 }
 
-int Insurer::searchCostumer(string costumer_Id) {
+int Insurer::searchCustomer(string costumer_Id) {
 	for (int i = 0; i < costumers; i++) {
 		if (costumersList[i]->getIdCustomer() == costumer_Id) {
 			return i;
@@ -27,7 +27,7 @@ int Insurer::searchCostumer(string costumer_Id) {
 
 bool Insurer::addVehicleInsurance(string costumer_Id, string plate, double insurance_Amount) {
 	if (insurances < SEG) {
-		if (searchCostumer(costumer_Id) != -1){
+		if (searchCustomer(costumer_Id) != -1){
 			vehicleInsurances[insurances].setIdCostumer(costumer_Id);
 			vehicleInsurances[insurances].setLicensePlate(plate);
 			vehicleInsurances[insurances].setInsuranceAmount(insurance_Amount);
@@ -60,7 +60,7 @@ string Insurer::getOwnVehicleName(string plate) {
 	}
 
 	if (costumer_Id != "") {
-		int index = searchCostumer(costumer_Id);
+		int index = searchCustomer(costumer_Id);
 		if (index != -1)
 			return costumersList[index]->getName();
 		else

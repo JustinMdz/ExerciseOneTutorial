@@ -17,7 +17,7 @@ private:
 public:
 	Insurer();
 	void addCostumer(Customer*);
-	int searchCostumer(string);
+	int searchCustomer(string);
 	bool addVehicleInsurance(string, string, double);
 	string getOwnVehicleName(string);
 	void getInsuranceAmount(string);
