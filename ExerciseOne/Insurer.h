@@ -10,8 +10,8 @@ using namespace std;
 class Insurer 
 {
 private:
-	Customer* costumersList[CLI];
-	VehicleInsurance vehiclesInsurance[SEG];
+	Customer *costumersList[CLI];
+	VehicleInsurance vehicleInsurances[SEG];
 	int costumers, insurances;
 
 public:

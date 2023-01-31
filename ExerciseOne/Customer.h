@@ -13,7 +13,7 @@ class Customer
 		Customer();
 		void setName(string);
 		string getName();
-		void setIdCustumer(string);
+		void setIdCustomer(string);
 		string getIdCustomer();
 
 };

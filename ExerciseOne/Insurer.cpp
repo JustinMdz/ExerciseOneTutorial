@@ -28,9 +28,9 @@ int Insurer::searchCostumer(string costumer_Id) {
 bool Insurer::addVehicleInsurance(string costumer_Id, string plate, double insurance_Amount) {
 	if (insurances < SEG) {
 		if (searchCostumer(costumer_Id) != -1){
-			vehiclesInsurance[insurances].setIdCostumer(costumer_Id);
-			vehiclesInsurance[insurances].setLicensePlate(plate);
-			vehiclesInsurance[insurances].setInsuranceAmount(insurance_Amount);
+			vehicleInsurances[insurances].setIdCostumer(costumer_Id);
+			vehicleInsurances[insurances].setLicensePlate(plate);
+			vehicleInsurances[insurances].setInsuranceAmount(insurance_Amount);
 			insurances++;
 			
 			return true;
@@ -42,9 +42,9 @@ bool Insurer::addVehicleInsurance(string costumer_Id, string plate, double insur
 void Insurer::getInsuranceAmount(string costumer_Id) {
 	cout << "Lista de seguros de vehiculos asociados a la cedula: " << costumer_Id << endl;
 	for (int i = 0; i < insurances; i++) {
-		if (vehiclesInsurance[i].getIdCostumer() == costumer_Id) {
-			cout << "Vehiculo con placa: " << vehiclesInsurance[i].getLicensePlate();
-			cout << ", monto del seguro: " << vehiclesInsurance[i].getInsuranceAmount()<<endl;
+		if (vehicleInsurances[i].getIdCostumer() == costumer_Id) {
+			cout << "Vehiculo con placa: " << vehicleInsurances[i].getLicensePlate();
+			cout << ", monto del seguro: " << vehicleInsurances[i].getInsuranceAmount()<<endl;
 		}
 	}
 }
@@ -53,8 +53,8 @@ string Insurer::getOwnVehicleName(string plate) {
 	string costumer_Id = "";
 	
 	for (int i = 0; i < insurances; i++) {
-		if (vehiclesInsurance[i].getLicensePlate() == plate) {
-			costumer_Id = vehiclesInsurance[i].getIdCostumer();
+		if (vehicleInsurances[i].getLicensePlate() == plate) {
+			costumer_Id = vehicleInsurances[i].getIdCostumer();
 			break;
 		}
 	}
