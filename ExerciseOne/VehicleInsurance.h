@@ -1,5 +1,7 @@
 #pragma once
 #include <iostream>
+#include "Insurance.h"
+
 using namespace std;
 
 class VehicleInsurance : public Insurance

@@ -1,9 +1,10 @@
 #include <iostream>
+#include "Customer.h"
 using namespace std;
 
 int main() {
 
-	cout << "Hello ";
+	Customer Customer
 
 	return 0;
 }

@@ -1,5 +1,5 @@
 #include "VehicleInsurance.h"
-#include "Insurance.h"
+
 VehicleInsurance::VehicleInsurance() {
 	this->licensePlate = "";
 }

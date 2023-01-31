@@ -8,7 +8,7 @@ class Insurance
 private:
 
 	string costumerId;
-	float insuranceAmount;
+	double insuranceAmount;
 
 public:
 	Insurance();

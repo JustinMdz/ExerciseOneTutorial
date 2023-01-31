@@ -18,8 +18,9 @@ void Insurer::addCostumer(Customer* costumer) {
 
 int Insurer::searchCostumer(string costumer_Id) {
 	for (int i = 0; i < costumers; i++) {
-		if (costumersList[i]->getIdCustomer() == costumer_Id);
-		return i;
+		if (costumersList[i]->getIdCustomer() == costumer_Id) {
+			return i;
+		}
 	}
 	return -1;
 }
@@ -67,7 +68,3 @@ string Insurer::getOwnVehicleName(string plate) {
 	}
 	return "Placa no existe";
 }
-
-
-
-	 
